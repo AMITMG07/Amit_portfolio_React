@@ -72,7 +72,7 @@ function App() {
             <div className="mt-6">
               <div className="flex justify-between items-center">
                 <div className="flex items-center gap-3">
-                  <img src={Exp} className="h-16 w-16 rounded-full object-cover" alt="Merkle" />
+                   <img src={Exp} className="h-16 w-16 rounded-full object-contain bg-white border" alt="Merkle" />
                   <div>
                     <h2 className="text-sm font-medium">Merkle, a dentsu company</h2>
                     <p className="text-xs text-gray-600">Analyst</p>
