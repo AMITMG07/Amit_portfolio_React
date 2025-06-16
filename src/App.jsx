@@ -2,6 +2,11 @@ import React from "react";
 import confetti from "canvas-confetti";
 import User from './assets/Amit.jpg';
 import Exp from './assets/Merkle.png';
+import Exp2 from './assets/ReactjsExp2.png';
+import Exp3 from './assets/JavaScriptExp3.png';
+import Exp4 from './assets/HCExp4.jpg';
+import Exp5 from './assets/TailwindExp5.png';
+import Exp6 from './assets/GitHubExp6.png';
 import { ConfettiButton } from "@/components/magicui/confetti";
 import BlurFade from "@/components/magicui/blur-fade";
 
@@ -26,6 +31,7 @@ function App() {
     <>
       <BlurFade delay={0.5} inView>
         <div className="px-4 sm:px-6 lg:px-8">
+
           {/* Intro Section */}
           <section className="mt-16 max-w-4xl mx-auto">
             <div className="flex flex-col-reverse md:flex-row items-center gap-6 md:gap-14">
@@ -71,49 +77,84 @@ function App() {
             <p className="font-light text-neutral-500 mb-4">
               I am an analyst, I create surveys and work as a survey programmer.
             </p>
-            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-              <div className="flex items-center gap-4">
-                <img
-                  src={Exp}
-                  className="h-14 w-14 sm:h-16 sm:w-16 rounded-full object-contain bg-white border"
-                  alt="Merkle"
-                />
-                <div>
-                  <h2 className="text-sm sm:text-base font-medium">
-                    Merkle, a dentsu company
-                  </h2>
-                  <p className="text-xs sm:text-sm text-gray-600">Analyst</p>
+
+            {/* Experience Items */}
+            {[{
+              img: Exp,
+              title: "Merkle, a dentsu company",
+              subtitle: "Analyst",
+              date: "Sep 2021 – Present"
+            }, {
+              img: Exp2,
+              title: "React Js",
+              subtitle: "Component-Based Front-End Development",
+              date: "(Learning & building – Past few months)"
+            }, {
+              img: Exp3,
+              title: "JavaScript",
+              subtitle: "Dynamic Web Interactions",
+              date: "(Learning & building – Past few months)"
+            }, {
+              img: Exp4,
+              title: "HTML and CSS",
+              subtitle: "Structure and Styling of Web Pages",
+              date: "(Learning & building – Past few months)"
+            }, {
+              img: Exp5,
+              title: "Tailwind CSS",
+              subtitle: "Utility-First Responsive Styling",
+              date: "(Learning & building – Past few months)"
+            }, {
+              img: Exp6,
+              title: "GitHub",
+              subtitle: "Version Control & Collaboration",
+              date: "(Using since past few months – Present)"
+            }].map((exp, idx) => (
+              <div key={idx} className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mt-5">
+                <div className="flex items-center gap-4">
+                  <img
+                    src={exp.img}
+                    className="h-14 w-14 sm:h-16 sm:w-16 rounded-full object-contain bg-white border"
+                    alt={exp.title}
+                  />
+                  <div>
+                    <h2 className="text-sm sm:text-base font-medium">
+                      {exp.title}
+                    </h2>
+                    <p className="text-xs sm:text-sm text-gray-600">{exp.subtitle}</p>
+                  </div>
                 </div>
+                <p className="text-sm text-neutral-500 font-light sm:text-right">
+                  {exp.date}
+                </p>
               </div>
-              <p className="text-sm text-neutral-500 font-light sm:text-right">
-                Sep 2021 – Present
-              </p>
-            </div>
+            ))}
           </section>
 
           {/* Contact Section */}
-          <section className="mt-16 mb-24 max-w-4xl mx-auto">
-            <h1 className="text-2xl sm:text-3xl font-black mb-2">Get in Touch</h1>
-            <p className="font-light text-neutral-500 mb-4">
-              Feel free to connect with me on WhatsApp or LinkedIn. I’m happy to assist and will respond as promptly as possible. Kindly refrain from unsolicited messages.
+          <section className="mt-16 mb-24 max-w-4xl mx-auto px-4">
+            <h1 className="text-2xl sm:text-3xl font-black mb-4">Get in Touch</h1>
+            <p className="font-light text-neutral-600 mb-6 max-w-xl">
+              Feel free to connect with me on WhatsApp, LinkedIn, or Email. I’m happy to assist and will respond as promptly as possible. Kindly refrain from unsolicited messages.
             </p>
-            <div className="flex flex-wrap gap-4">
+
+            <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6">
               <ConfettiButton
-                className="px-5 py-2 font-light rounded-full shadow-md"
+                className="px-6 py-2 w-full sm:w-auto text-center font-light rounded-full shadow-md transition-all hover:bg-neutral-800 hover:text-white"
                 onClick={() => triggerConfettiAndOpen(whatsappUrl)}
               >
                 Say Hi on WhatsApp
               </ConfettiButton>
 
               <ConfettiButton
-                className="px-5 py-2 font-light rounded-full shadow-md"
+                className="px-6 py-2 w-full sm:w-auto text-center font-light rounded-full shadow-md transition-all hover:bg-neutral-800 hover:text-white"
                 onClick={() => triggerConfettiAndOpen(linkedinUrl)}
               >
                 Message on LinkedIn
               </ConfettiButton>
 
               <ConfettiButton
-                className="px-5 py-2 font-light rounded-full shadow-md"
+                className="px-6 py-2 w-full sm:w-auto text-center font-light rounded-full shadow-md transition-all hover:bg-neutral-800 hover:text-white"
                 onClick={() => triggerConfettiAndOpen(mailUrl)}
               >
                 Email me
