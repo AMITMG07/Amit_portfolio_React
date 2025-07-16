@@ -60,7 +60,7 @@ function App() {
               <span className="block text-lg sm:text-xl font-semibold text-gray-900 mb-3">
                 Analyst by profession, designer at heart.
               </span>
-              After completing both a diploma and a degree in Computer Science Engineering, I started my career in <span className="font-medium text-gray-900">2021</span> with <span className="font-semibold underline">Ugam Solutions (now Merkle, a dentsu company)</span> as an Associate Analyst. 
+              After completing both a diploma and a degree in Computer Science Engineering, I started my career in <span className="font-medium text-gray-900">2021</span> with <span className="font-semibold underline">Ugam Solutions (now Dentsu Global Services)</span> as an Associate Analyst. 
               I’ve worked extensively with tools like <span className="font-semibold underline">Decipher</span>, <span className="font-semibold underline">SurveyToGo</span>, and later transitioned to <span className="font-semibold underline">Qualtrics</span> as a Survey Programmer.
               <br /><br />
               Over time, I discovered my true passion lies in <span className="font-semibold underline">web design</span>—where creativity meets technology. I'm now transitioning into the web design space, bringing along my analytical mindset, problem-solving skills, and a deep interest in creating clean, intuitive, and user-focused websites.
