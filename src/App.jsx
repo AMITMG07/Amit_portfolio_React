@@ -1,7 +1,7 @@
 import React from "react";
 import confetti from "canvas-confetti";
 import User from './assets/Amit.jpg';
-import Exp from './assets/Merkle.png';
+import Exp from './assets/DGS.jpg';
 import Exp2 from './assets/ReactjsExp2.png';
 import Exp3 from './assets/JavaScriptExp3.png';
 import Exp4 from './assets/HCExp4.jpg';
@@ -81,7 +81,7 @@ function App() {
             {/* Experience Items */}
             {[{
               img: Exp,
-              title: "Merkle, a dentsu company",
+              title: "Dentsu Global Services",
               subtitle: "Analyst",
               date: "Sep 2021 – Present"
             }, {
